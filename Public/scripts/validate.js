@@ -104,7 +104,7 @@ exports.submit=async(req,res)=>{
                         await col_1.updateOne(
                            {Names : list[x]},
                             {
-                                $set: {Team_Leader : 0}
+                                $set: {Team_Leader : 1}
                             }
                         );
 
