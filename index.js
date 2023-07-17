@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 
 const port = 5000;
 //const location = path.join(__dirname , "./Public");
-app.use(express.static("./Public"));
+app.use(express.static("Public"));
 //console.log(location)
 
 //const view = path.join(__dirname, "./views");
