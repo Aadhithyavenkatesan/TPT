@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    background-color: aquamarine;
+}
+body{
+    background-color: azure;
+    width: 50vw;
+    height: 50vh;
+    display: block;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+h3{
+    padding: 15px 10px;
+    border-bottom: 2px solid black;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tbody td{
+    padding: 5px;
+}
+.edit,.delete,.addBtn{
+    text-decoration: none;
+    color: white;
+    background-color: blueviolet;
+    border-radius: 5px;
+    padding: 2.5px 5px 2.5px 5px;
+
+}
+.delete{
+    background-color: rgb(226, 43, 43);
+}
+
+p{
+    text-align: right;
+    padding: 5px;
+}
+
+.addBtn{
+    background-color: darkslategrey;
+   
+}
+
+.form-group,label,input{
+    display: block;
+    margin: 10px;
+}
+
+.alert{
+    display: block;
+    padding: 5px;
+    background-color: forestgreen;
+     
+}
