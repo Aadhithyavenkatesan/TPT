@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Montserrat&family=Poppins:wght@200;300;500;600;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.box{
+  font-size: bold;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Montserrat&family=Poppins:wght@200;300;500;600;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.box{
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+}
+.select{
+  border: 5px solid #0d6efd;
+  border-radius: 5px;
+}
+
+.lead{
+  border: 5px solid #dc3545;
+  border-radius: 5px;
+  color: #9fa0a0;
+}
+div{
+  cursor:default;
+}
+
+input{
+  font-size: larger;
+}

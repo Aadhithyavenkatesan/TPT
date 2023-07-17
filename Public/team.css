@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Montserrat&family=Poppins:wght@200;300;500;600;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+/* body{
+  height: 100vh;
+} */
+
+.con{
+  height: 90vh;
+}
+
+.bor{
+  padding: 45px;
+  border: 2px solid #fff;
+  border-radius: 13px;
+}
