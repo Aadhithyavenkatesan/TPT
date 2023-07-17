@@ -26,7 +26,7 @@ app.use(express.static("./Public"));
 
 //const view = path.join(__dirname, "./views");
 const handlbars = exphbs.create({extname: ".hbs"});
-//app.engine('html', handlbars.engine);
+app.engine('html', handlbars.engine);
 app.set("view engine","hbs");
 // app.set('views', view);
 // app.engine('html', engines.mustache);
