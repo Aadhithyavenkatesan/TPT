@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 
 const port = 5000;
-const location = path.join(__dirname , "./Public");
+//const location = path.join(__dirname , "./Public");
 app.use(express.static("./Public"));
 //console.log(location)
 
