@@ -26,7 +26,7 @@ app.use(express.static("./Public"));
 
 //const view = path.join(__dirname, "./views");
 const handlbars = exphbs.create({extname: ".hbs"});
-app.engine('html', handlbars.engine);
+app.engine('hbs', handlbars.engine);
 app.set("view engine","hbs");
 // app.set('views', view);
 // app.engine('html', engines.mustache);
@@ -49,6 +49,6 @@ app.use('/',routes);
 
 
 
-app.listen(port, "0.0.0.0",()=>{
-    console.log('Listening port :',port , __dirname, location)
+app.listen(port,()=>{
+    //console.log('Listening port :',port , __dirname, location)
 })
