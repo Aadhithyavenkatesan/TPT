@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="iv.css">
+    
+    <title>Placement Form</title>
+</head>
+<body class="bg-dark">
+    <div class="d-flex con justify-content-center align-items-center">
+        <div class="bor">
+            <form name="form-data">
+                <fieldset>
+                    <legend  class="form-label text-bg-dark">Placement Form</legend>
+                    {{!-- {{#if msg}}
+                    <p class="text-success">{{msg}}</p>
+                    {{/if}} --}}
+                    
+                    <p class="text-danger " id="err" style="display: none;">Invalid Roll Number</p>
+            <label for="register_no" class=" pb-3 text-bg-dark">Enter your Register Number  <span>&#42;</span></label><br>
+            <input type="text" id="register_no" name='register' placeholder="Ex : A2104013" class=" mb-3 in1" required><br>
+            <label for="roll"  class=" pb-3 text-bg-dark">Enter your Roll No  <span>&#42;</span></label><br>
+            <input type="number" id="roll" name='roll' placeholder=" like 1 , 15 , 12" class="in1" required><br>
+            <label for="name" class="my-3 text-bg-dark">Enter your Name <span>&#42;</span></label><br>
+            <input type="text" id="name" name="Name" required><br>
+            <label for="name_father" class="my-3 text-bg-dark">Enter your Father Name <span>&#42;</span></label><br>
+            <input type="text" id="name_father" name="Father" required><br>
+            <label for="name" class="my-3 text-bg-dark">Enter your Father Occupation <span>&#42;</span></label><br>
+            <input type="text" id="name" name="Father_occupation" placeholder="If father is not alive then Type='Late'"><br>
+            <label for="name_Mother" class="my-3 text-bg-dark">Enter your Mother Name <span>&#42;</span></label><br>
+            <input type="text" id="name_Mother" name="Mother" required><br>
+            <label for="name" class="my-3 text-bg-dark">Enter your Mother Occupation <span>&#42;</span></label><br>//
+            <input type="text" id="name" name="Mother_occupation" placeholder="If father is not alive then Type='Late'"><br>
+            <label for="phone" class="my-3 text-bg-dark">Enter your Mobile Number <span>&#42;</span></label><br>
+            <input type="tel" max="10" min="10" id="phone" name="Phone" ><br>
+            <label for="birth" class="my-3 text-bg-dark">Enter your Date of Birth   <span>&#42;</span></label><br>
+            <input type="date"  id="Birth" name="Birth" ><br>
+            <label for="Caste" class="my-3 text-bg-dark">Enter your Caste Type   <span>&#42;</span></label><br>
+            <input type="text"  id="Caste" name="Caste" placeholder="Ex: BC, MBc, SC"><br>
+            <label for="email" class="my-3 text-bg-dark">Enter your Primary Email  <span>&#42;</span></label><br>
+            <input type="email" id="email" name="Primary_email"><br>
+            <label for="email" class="my-3 text-bg-dark">Enter your Secondary Email  <span>&#42;</span></label><br>
+            <input type="email" id="email" name="Secondary_email"><br>
+            <label for="sem" class="my-3 text-bg-dark">Enter your Semester Percentages <span>&#42;</span></label><br>
+            
+            <input type="number" step="any" class="sem mx-3 my-3" name="mark1" placeholder="I Semester %">
+            <input type="number" step="any" class="sem mx-3 my-3" name="mark2" placeholder="II Semester %"><br>
+            <input type="number" step="any" class="sem mx-3 my-3" name="mark3" placeholder="III Semester %">
+            <input type="number" step="any" class="sem mx-3 my-3" name="mark4" placeholder="IV Semester %"><br>
+            
+            <label for="ans"  class="py-4 text-bg-dark">Select Your's <span>&#42;</span></label><br>
+            <input type="radio" name="Citizen" id="yes" value="Muslim" class="in1" required><label class="form-label text-bg-dark pe-4 ps-1" >Muslim</label>
+            <input type="radio" name="Citizen" id="no" value="Christian" class="in1" required><label class="text-bg-dark pe-4 ps-1 pb-4" >Christian</label>
+            <input type="radio" name="Citizen" id="no" value="Hindu" class="in1" required><label class="text-bg-dark ps-1 pb-4" >Hindu</label><br>
+
+            <label for="disability"  class="py-4 text-bg-dark">Select YES if your Disabled Person <span>&#42;</span></label><br>
+            <input type="radio" name="Disable" id="yes" value="Yes" class="in1" required><label class="form-label text-bg-dark pe-4 ps-1" >Yes</label>
+            <input type="radio" name="Disable" id="no" value="No" class="in1" required><label class="text-bg-dark pe-4 ps-1 pb-4" >No</label> <br>     
+            <label for="SSLC"  class="py-4 text-bg-dark">Enter Your SSLC % <span>&#42;</span></label><br>
+            <input type="number" step="any" name="SSLC" id="yes"  class="in1" required><br>     
+            <label for="HSC"  class="py-4 text-bg-dark">Enter Your HSC % </label><br>
+            <input type="number" step="any" name="HSC" id="yes"  class="in1" ><br>  
+
+
+            <label for="wish"  class="py-4 text-bg-dark">Select Placement or Higher-Studies <span>&#42;</span></label><br>
+            <input type="radio" name="Wish" id="yes" value="Placement" class="in1" required><label class="form-label text-bg-dark pe-4 ps-1" >Placement</label>
+            <input type="radio" name="Wish" id="no" value="Higher Studies" class="in1" required><label class="text-bg-dark pe-4 ps-1 pb-4" >Higher Studies</label><br>
+
+             <label for="Address"  class="py-4 text-bg-dark">Enter your Address with Pincode <span>&#42;</span></label><br>
+            <textarea name="Address" id="Address" cols="30" rows="6"></textarea><br>
+
+            <label for="aadhar"  class="py-4 text-bg-dark">Enter your Aadhar Card Number </label><br>
+            <input type="number"  name="Aadhar" id="aadhar" class="in1" ><br>
+            <label for="Pan"  class="py-4 text-bg-dark">Enter your Pan Card Number </label><br>
+            <input type="text" min="10" max="10" name="Pan" id="Pan" class="in1" ><br>
+
+            <span id="msg" class="my-2 text-success"></span><br>
+
+            <input type="submit" class="my-4 btn btn-primary" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <script type = "text/javascript" >
+        function check(event){
+            event.preventDefault();
+            const roll = document.getElementById('roll');
+            if(roll.value > 0 && roll.value <= 62){
+                return true;
+                
+            }else{
+               return document.getElementById('err').style.display= 'block'
+            }
+        }
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzeHrHgoQIOtisKD7E_eZIAFnnLPZfDGfDjj7czDhylwGGDTNtyDGvbiZIaNP1dLYqBtg/exec'
+        const form = document.forms['form-data']
+        const msg = document.getElementById('msg')
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        alert('Your Request has been Submitted Successfully!')
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = 'Your Placement Form is Submitted!'
+
+            setTimeout(function(){
+                msg.innerHTML = ''
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+  })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a8a0719660.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
