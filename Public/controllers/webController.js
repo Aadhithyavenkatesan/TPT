@@ -76,3 +76,12 @@ exports.formation = async(req,res)=>{
     }
 }
 
+exports.placement = (req,res)=>{
+    console.log(req.body.roll)
+    console.log(req.body.mark1)
+    const str = JSON.stringify(req.body);
+    console.log(req.body)
+}
+exports.placement_page = (req,res)=>{
+    res.render('placement')
+}
