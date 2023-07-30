@@ -12,6 +12,8 @@ router.post("/list", validate.validate)
 router.post("/list-submit", validate.submit)
 router.post("/iv-form", webController.ivForm)
 router.get("/formation", webController.formation)
+router.post("/placement", webController.placement)
+router.get("/placement-page", webController.placement_page)
 
 
 module.exports = router;
