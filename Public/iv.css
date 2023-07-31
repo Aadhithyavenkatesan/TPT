@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    overflow-x: hidden;
   }
 
   /* body{
@@ -23,4 +24,8 @@
 
  .sem{
   width: 150px;
+ }
+
+ textarea{
+  width: auto;
  }

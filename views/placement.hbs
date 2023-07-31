@@ -10,7 +10,7 @@
     <title>Placement Form</title>
 </head>
 <body class="bg-dark">
-    <div class="d-flex con justify-content-center align-items-center">
+    <div class="d-flex  container-sm con justify-content-center align-items-center">
         <div class="bor">
             <form name="form-data">
                 <fieldset>
@@ -29,11 +29,11 @@
             <label for="name_father" class="my-3 text-bg-dark">Enter your Father Name <span>&#42;</span></label><br>
             <input type="text" id="name_father" name="Father" required><br>
             <label for="name" class="my-3 text-bg-dark">Enter your Father Occupation <span>&#42;</span></label><br>
-            <input type="text" id="name" name="Father_occupation" placeholder="If father is not alive then Type='Late'"><br>
+            <input type="text" id="name" name="Father_occupation" placeholder="If father is not alive,Type:'Late'"><br>
             <label for="name_Mother" class="my-3 text-bg-dark">Enter your Mother Name <span>&#42;</span></label><br>
             <input type="text" id="name_Mother" name="Mother" required><br>
-            <label for="name" class="my-3 text-bg-dark">Enter your Mother Occupation <span>&#42;</span></label><br>//
-            <input type="text" id="name" name="Mother_occupation" placeholder="If father is not alive then Type='Late'"><br>
+            <label for="name" class="my-3 text-bg-dark">Enter your Mother Occupation <span>&#42;</span></label><br>
+            <input type="text" id="name" name="Mother_occupation" placeholder="If Mother is not alive,Type:'Late'"><br>
             <label for="phone" class="my-3 text-bg-dark">Enter your Mobile Number <span>&#42;</span></label><br>
             <input type="tel" max="10" min="10" id="phone" name="Phone" ><br>
             <label for="birth" class="my-3 text-bg-dark">Enter your Date of Birth   <span>&#42;</span></label><br>
@@ -52,13 +52,18 @@
             <input type="number" step="any" class="sem mx-3 my-3" name="mark4" placeholder="IV Semester %"><br>
             
             <label for="ans"  class="py-4 text-bg-dark">Select Your's <span>&#42;</span></label><br>
-            <input type="radio" name="Citizen" id="yes" value="Muslim" class="in1" required><label class="form-label text-bg-dark pe-4 ps-1" >Muslim</label>
-            <input type="radio" name="Citizen" id="no" value="Christian" class="in1" required><label class="text-bg-dark pe-4 ps-1 pb-4" >Christian</label>
-            <input type="radio" name="Citizen" id="no" value="Hindu" class="in1" required><label class="text-bg-dark ps-1 pb-4" >Hindu</label><br>
+            <div class=" d-sm-flex text-center align-baseline align-items-baseline">
+            <div class="d-flex d-sm-block text-center align-baseline align-items-baseline"><input type="radio" name="Citizen" id="yes" value="Muslim" class="in1" required><label class="form-label text-bg-dark pe-4 ps-1 " >Muslim</label></div>
+            <div class="d-flex d-sm-block text-center align-baseline align-items-baseline"><input type="radio" name="Citizen" id="no" value="Christian" class="in1" required><label class="text-bg-dark pe-4 ps-1 " >Christian</label></div>
+            <div class="d-flex d-sm-block text-center align-baseline align-items-baseline"><input type="radio" name="Citizen" id="no" value="Hindu" class="in1" required><label class="text-bg-dark ps-1 " >Hindu</label><br></div>
+
+            </div>
 
             <label for="disability"  class="py-4 text-bg-dark">Select YES if your Disabled Person <span>&#42;</span></label><br>
-            <input type="radio" name="Disable" id="yes" value="Yes" class="in1" required><label class="form-label text-bg-dark pe-4 ps-1" >Yes</label>
-            <input type="radio" name="Disable" id="no" value="No" class="in1" required><label class="text-bg-dark pe-4 ps-1 pb-4" >No</label> <br>     
+            <div class=" d-sm-flex text-center align-baseline align-items-baseline">
+            <div class="d-flex d-sm-block text-center align-baseline align-items-baseline"><input type="radio" name="Disable" id="yes" value="Yes" class="in1" required><label class="form-label text-bg-dark pe-4 ps-1" >Yes</label></div>
+            <div class="d-flex d-sm-block text-center align-baseline align-items-baseline"><input type="radio" name="Disable" id="no" value="No" class="in1" required><label class="text-bg-dark pe-4 ps-1 pb-4" >No</label> <br>     </div>
+            </div>
             <label for="SSLC"  class="py-4 text-bg-dark">Enter Your SSLC % <span>&#42;</span></label><br>
             <input type="number" step="any" name="SSLC" id="yes"  class="in1" required><br>     
             <label for="HSC"  class="py-4 text-bg-dark">Enter Your HSC % </label><br>
@@ -66,9 +71,12 @@
 
 
             <label for="wish"  class="py-4 text-bg-dark">Select Placement or Higher-Studies <span>&#42;</span></label><br>
-            <input type="radio" name="Wish" id="yes" value="Placement" class="in1" required><label class="form-label text-bg-dark pe-4 ps-1" >Placement</label>
-            <input type="radio" name="Wish" id="no" value="Higher Studies" class="in1" required><label class="text-bg-dark pe-4 ps-1 pb-4" >Higher Studies</label><br>
-
+            <div class=" d-sm-flex">
+                <div class="d-flex d-sm-block text-center align-baseline align-items-baseline"><input type="radio" name="Wish" id="yes" value="Placement" class="in1" required> <label class="text-bg-dark pe-4 ps-1" > Placement</label></div>
+            <div class="d-flex d-sm-block text-center  align-baseline align-items-baseline"><input type="radio" name="Wish" id="no" value="Higher Studies" class="in1" required> <label class="text-bg-dark pe-4 ps-1 " > Higher Studies</label></div><br>
+            </div>
+            
+            
              <label for="Address"  class="py-4 text-bg-dark">Enter your Address with Pincode <span>&#42;</span></label><br>
             <textarea name="Address" id="Address" cols="30" rows="6"></textarea><br>
 
